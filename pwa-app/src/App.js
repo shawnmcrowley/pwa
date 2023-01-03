@@ -21,9 +21,9 @@ function App() {
         <h1>Videos</h1>
       </header>
         {data.map(video => (
-        <div key={video.id}>
+        <div key={video.id} class="container-fluid">
         <h2>{video.name}</h2>
-        <video height={200} controls src={video.video_url} />
+        <video height={200} width={360} controls src={video.video_url} />
         </div>
   ))}
     </div>
